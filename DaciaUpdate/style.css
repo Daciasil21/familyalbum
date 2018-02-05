@@ -1,0 +1,154 @@
+body{
+    box-sizing: border-box;
+
+}
+
+[data-sticky] {
+  width: 100%;
+}
+
+/*.margin {
+    margin-left: 200px;
+}
+*/
+.no-margin{
+  margin:auto 0;
+
+}
+
+.my-title{
+  padding: 20px;
+  font-size: 120%;
+}
+
+ul.polaroids {
+    list-style: none;
+    background-color: #323232;
+    background: url(https://s3-us-west-2.amazonaws.com/iceharbor/bg-body.jpg) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+}
+
+ul.polaroids a:after {
+    content: attr(title);
+}
+
+
+/* By default, we tilt all our images -2 degrees */
+
+ul.polaroids li {
+    margin: 20px;
+    padding-top: 12px;
+    transform: rotate(-2deg);
+}
+
+
+/* Rotate all even images 2 degrees */
+
+ul.polaroids li:nth-child(even) {
+    transform: rotate(2deg);
+}
+
+
+/* Don't rotate every third image, but offset its position */
+
+ul.polaroids li:nth-child(3n) {
+    transform: none;
+    position: relative;
+    top: -5px;
+}
+
+
+/* Rotate every fifth image by 5 degrees and offset it */
+
+ul.polaroids li:nth-child(5n) {
+    transform: rotate(5deg);
+    position: relative;
+    right: 5px;
+}
+
+
+/* Keep default rotate for every eighth, but offset it */
+
+ul.polaroids li:nth-child(8n) {
+    position: relative;
+    top: 8px;
+    right: 5px;
+}
+
+
+/* Keep default rotate for every eleventh, but offset it */
+
+ul.polaroids li:nth-child(11n) {
+    position: relative;
+    top: 3px;
+    left: -5px;
+}
+
+ul.polaroids li:hover {
+    transform: scale(1.15);
+    position: relative;
+    z-index: 0;
+}
+
+ul.polaroids li {
+    background-color: #fff;
+    transition: transform .15s linear;
+    box-shadow: 0 3px 2px rgba(0, 0, 0, .25);
+}
+
+
+/* On hover, darken the shadows a bit */
+
+ul.polaroids li:hover {
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .5);
+}
+
+.orbit-image{
+     display: block;
+  width:635px;
+  height:475px;
+  text-align: center;
+  margin:auto;
+}
+.orbit-caption{
+      text-align: center;
+  margin:auto;
+}
+.portfolio{
+    width: 550px;
+    height: 350px;
+}
+.orbit-caption{
+    display:block;
+/*    background-color: #95a5a6;
+    opacity: 0.7;*/
+    margin-left: 440px;
+   
+    width:42%;
+}
+.my-title{
+  background-color: #fdcb6e;
+    opacity: 0.7;
+      text-shadow: 2px 2px #b2bec3;
+}
+
+.title{
+    background-color: #fdcb6e !important;
+    padding-left: 250px;
+    color: #fff;
+    opacity: 0.7;
+  text-shadow: 2px 2px #b2bec3;
+
+}
+.orbit-figure {
+
+    background: url('https://i.stack.imgur.com/tc3b6.jpg');
+
+}
+
+#my-info, .orbit-bullets {
+    background-color: #ffeaa7;
+    color: #fff;
+}
